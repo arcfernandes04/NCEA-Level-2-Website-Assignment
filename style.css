@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.clr {
+    clear: both;
+}
+
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0,0,0,0.3)), url("images/background.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    z-index: 5;
+}
+
+.logo-transparent img {
+    width: 80px;
+    float: left;
+    margin-left: 1%;
+    height: auto;
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.logo-colored-bg img {
+    width: 80px;
+    float: left;
+    margin-left: 1%;
+    height: auto;
+    display: none;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.nav-area {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 1.5%;
+    font-family: 'Baloo Tamma 2', Verdana, sans-serif;
+}
+
+.nav-area li {
+    display: inline-block;
+}
+
+.nav-area li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.nav-area li a:hover {
+    color: #202F12;
+    background-color: #fff;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.nav-area a.active {
+    background: none;
+    border: none;
+    box-shadow:0px 0px 0px 2px #fff inset;
+    color: #fff;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.nav-area a.active:hover {
+    box-shadow: none;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+nav.scroll {
+    background-color: #fff;
+    box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.52);
+    transition: .5s;
+}
+
+nav.scroll .nav-area li a {
+    color: #202F12;
+    font-weight: bold;
+    transition: .5s;
+}
+
+nav.scroll .nav-area li a:hover {
+    background-color: #202F12;
+    color: #fff;
+    border: none;
+    transition: .5s;
+}
+
+nav.scroll .nav-area a.active {
+    box-shadow:0px 0px 0px 2px #162e00 inset;
+    transition: .5s;
+}
+
+nav.scroll .nav-area a.active:hover {
+    background-color: #202F12;
+    color: #fff;
+    border: none;
+    transition: .5s;
+}
+
+nav.scroll .logo-transparent img {
+    display: none;
+}
+
+nav.scroll .logo-colored-bg img {
+    display: block;
+}
+
+.welcome-text {
+    position: absolute;
+    width: 60%;
+    margin: 20% 20%;
+    line-height: 3em;
+    text-align: center;
+}
+
+.welcome-text h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.content {
+    margin: auto;
+    margin-bottom: 100px;
+    width: 98%;
+}
+
+.content h2 {
+    text-align: center;
+    padding-top: 2.5%;
+    font-size: 40px;
+    color: #3d4337;
+}
+
+.content p {
+    padding: 2% 5% 0% 5%;
+}
+
+.boxes {
+    width: 92%;
+    height: 24vw;
+    margin: 20px auto;
+    text-align: center;
+    padding:20px 15px 0px 15px; 
+}
+
+.box {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30%;
+    height: 24vw;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    position: relative;
+}
+
+.box.one {
+    float: left;
+}
+
+.box.two {
+    float: left;
+    margin-left: 5%;
+}
+
+.box.three {
+    float: right;
+}
+
+.box h3 {
+    color: #3d4337;
+}
+
+.box a {
+    display: block;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    margin-left: -75px;
+    background-color: #202F12;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    width: 150px;
+    box-sizing: border-box;
+    font-family: 'Baloo Tamma 2', Verdana, sans-serif;
+    font-size: 17px;
+}
+
+.box a:hover {
+    background-color: #846148;
+    transition: .5s;
+}
+
+.nav-how-pg {
+    background-color: rgba(0,0,0,0.7);
+    
+}
+
+.content-how-pg {
+    margin: 0;
+    width: 100%;
+}
+
+.parallax-text{
+    color: #fff;
+    width: 90%;
+    padding: 0 5%;
+    font-size: 40px;
+    padding-top: 17%;
+    text-align: center;
+}
+
+.text-block {
+    height: 60vh;
+    padding:5%;
+}
+
+.parallax-one {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0,0,0,0.3)), url("images/parallax-one.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.parallax-two {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0,0,0,0.3)), url("images/parallax-two.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.parallax-three {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0,0,0,0.3)), url("images/parallax-three.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+footer {
+    background-color: #202F12;
+    height: 70px;
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Baloo Tamma 2', Verdana, sans-serif;
+    font-size: 16px;
+    
+}
+
+.content.tips-pg {
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    width: 98%;
+    text-align: center;
+    width: 100%;
+}
+
+.content.tips-pg a {
+    color: #162e00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content.tips-pg a:hover {
+    color: #000;
+    font-weight: normal;
+}
+
+nav.tips-pg .nav-area li a{
+    color: #162e00;
+    font-weight: bold;
+    transition: .5s;
+}
+
+nav.tips-pg .nav-area li a:hover {
+    background-color: #202F12;
+    color: #fff;
+    border: none;
+    transition: .5s;
+}
+
+nav.tips-pg .nav-area a.active {
+    box-shadow:0px 0px 0px 2px #202F12 inset;
+    transition: .5s;
+}
+
+nav.tips-pg .nav-area a.active:hover {
+    background-color: #202F12;
+    color: #fff;
+    border: none;
+    transition: .5s;
+}
+
+nav.tips-pg .logo-colored-bg img {
+    display: block;
+}
+
+nav.tips-pg .checkbtn {
+    color: #202F12;
+}
+
+.boxes li {
+    list-style-type: none;
+}
+
+header.contact-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0,0,0,0.3)), url("images/contact-pg-header.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-text {
+    position: absolute;
+    width: 60%;
+    margin: 12% 20%;
+    line-height: 3em;
+    text-align: center;
+}
+
+.contact-text h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+p.contact-pg {
+    text-align: center;
+}
+
+.contact-details {
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.contact-details table {
+    width: 100%;
+}
+.contact-details td {
+    padding: 15px;
+}
+
+@media only screen and (max-width: 1050px) {
+    .boxes {
+        height: 60vh;
+    }
+
+    .box {
+        display: block;
+        width: 45%;
+        height: 30vh;
+    }
+  
+      .box.one {
+          margin-left: 1%;
+    }
+  
+      .box.two {
+          margin-right: 1%;
+          float: right;
+    }
+  
+      .box.three {
+          float: left;
+          margin-left: 27%;
+          margin-top: 4vw;
+    }
+    
+    .contact-text {
+        margin: 35% 20%;
+    }
+
+    .boxes.row-two {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 915px) {
+    .contact-details {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .boxes {
+        height: 150vh;
+    }
+    
+    .box {
+        display: block;
+        width: 98%;
+        height: 50vh;
+      }
+  
+      .box.one {
+          margin-right: 1%;
+          margin-left: 0;
+      }
+  
+      .box.two {
+          float: left;
+          margin: 20px 0;
+          margin-right: 1%;
+      }
+  
+      .box.three {
+          margin-right: 1%;
+          margin-top: 0;
+          margin-left: 0;
+      }
+    
+    .boxes.row-two {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav.scroll .checkbtn {
+        color: #202F12;
+    }
+
+    .nav-area {
+        position: fixed;
+        width: 90%;
+        height: 70vh;
+        background-color: #202F12;
+        margin-top: 0;
+        margin-left: 5%;
+        text-align: center;
+        top: 90px;
+        left: -100%;
+        transition: all .5s;
+    }
+
+    .nav-area li {
+        display: block;
+        font-size: 40px;
+        margin: 50px 0;
+        line-height: 30px;
+        font-weight: bold;
+    }
+
+    .nav-area li a:hover {
+        border: none;
+        color: #202F12;
+        background-color: #fff;
+    }
+
+    nav.scroll .nav-area li a {
+        color: #fff;
+    }
+
+    nav.scroll .nav-area a.active {
+        color: #fff;
+        box-shadow:0px 0px 0px 2px #fff inset;
+    
+    }
+
+    nav.scroll .nav-area a.active:hover {
+        color: #202F12;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    header {
+        background-attachment: scroll;
+        height: 60vh;
+    }
+
+    .welcome-text {
+      margin: 40% 10%;
+      width: 80%;
+    }
+
+    .welcome-text h1 {
+        font-size: 35px;
+    }
+
+    .content h2 {
+        font-size: 25px;
+    }
+
+    .parallax-text{
+        color: #fff;
+        width: 90%;
+        padding: 0 5%;
+        font-size: 25px;
+        padding-top: 30%;
+        text-align: center;
+    }
+    
+    .parallax-one, .parallax-two, .parallax-three {
+        background-attachment: scroll;
+        height: 100vh;
+    }
+
+    nav.tips-pg .nav-area li a{
+        color: #fff;
+    }
+
+    nav.tips-pg .nav-area a.active {
+        box-shadow:0px 0px 0px 2px #fff inset;
+
+    }
+
+    .content.tips-pg {
+        margin-top: 100px;
+    }
+
+    header.contact-header {
+        height: 40vh;
+    }
+
+    .contact-text {
+        margin: 30% 10%;
+        width: 80%;
+    }
+
+    .contact-text h2 {
+        font-size: 35px;
+    }
+
+    .contact-details {
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    .contact-details {
+        width: 100%;
+    }
+}

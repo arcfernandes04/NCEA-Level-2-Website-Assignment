@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>  
+<html>
+<head>
+    <title>Traveling Eco-Friendly</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+
+	<script>
+		window.onscroll = () => {
+		  const nav = document.querySelector('#navbar');
+		  if(this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
+		}; 
+		</script>
+</head> 
+
+<body>
+	<header>
+		<div class="welcome-text">
+			<h1>Traveling Eco-Friendly</h1>
+		</div>
+	</header>
+	<nav id="navbar">
+		<div>
+			<input type="checkbox" id="check">
+			<label for="check" class="checkbtn" title="Menu">
+				<i class="fas fa-bars"></i>
+			</label>
+
+			<div class="logo-transparent">
+				<a href="index.html"><img src="images/logo-transparent.png" alt=""></a>
+			</div> <!-- /logo-transparent -->
+
+			<div class="logo-colored-bg">
+				<a href="index.html"><img src="images/logo.png" alt=""></a>
+			</div> <!-- /logo-colored-bg -->
+
+			<ul class="nav-area">
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="how-pg.html">How?</a></li>
+				<li><a href="tips-pg.html">Tips</a></li>
+				<li><a href="contact-pg.html">Contact</a></li>
+			</ul>
+		</div> <!-- /nav-bar -->
+	</nav>
+
+	<div class="content">
+		<h2>Haudi</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet porro nisi officia? Quae itaque aperiam laudantium pariatur accusantium fugit odit cumque enim modi? Beatae, saepe eligendi autem tenetur consectetur sequi nam corrupti voluptatibus laborum doloremque harum placeat eveniet! Ducimus, vel rerum fuga laboriosam quidem nulla temporibus facere quasi at neque.</p>
+
+		<div class="boxes">
+			<section class="box one">
+				<h3>What?</h3>
+				<p>You know what it means to be eco-friendly but how can you be eco-friendly while traveling? </p>
+				<a href="how-pg.html">Find out</a>
+			</section>
+			<section class="box two">
+				<h3>Tips</h3>
+				<p>Some things to keep in mind while planning a </p>
+				<a href="tips-pg.html">Read more</a>
+			</section>
+			<section class="box three">
+				<h3>Contact Us</h3>
+				<p>Have any questions about travelling eco-friendly or just want help planning a holiday? Contact us below!</p>
+				<a href="contact-pg.html">Go</a>
+			</section>
+		</div> <!-- /boxes -->
+	</div> <!-- /content -->
+
+	<footer class="clr">
+		<p>&copy;2020 Abby Fernandes</p>
+	</footer>
+
+</body>  	
+</html>  
